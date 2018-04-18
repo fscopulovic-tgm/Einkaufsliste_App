@@ -47,9 +47,7 @@ export default class App extends React.Component {
    });
   }
 
-  addItem() {    
-    console.log(this.ref);
-    
+  addItem() {
     this.ref.add({
       itemname: this.state.textInput,
       bought: false,
