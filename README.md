@@ -73,21 +73,25 @@ render() {
     );
 }
 ```
+## Offline-Verfügbarkeit und globale Erreichbarkeit
+Firebase bietet eine Offline-Verfügbarkeit. Die Daten werden lokal gespeichert und dann bei Internetzugriff mit dem Server aktualisiert.
+Firebase bietet zudem auch eine globale Erreichbarkeit.
 ## Probleme mit dem Layout
 Das Layout der Items in der Liste konnte nicht wie gewollt gestaltet werden, weshalb die Items in der Liste nicht gut aussehen. Dies wirkt sich jedoch nicht auf die Funktionalität der Applikation auf.
 ## Voraussetzung für die Installation
 * [React Native](https://facebook.github.io/react-native/)
 * [Node Package Manager](https://www.npmjs.com)
 * [Android Studio](https://developer.android.com/studio/index.html) für einen Emulator
-## Installation
+## Installation und Ausführung
+### Allgemeine Ausführung des Projektes
 1. ``` git clone https://github.com/fscopulovic-tgm/Einkaufsliste_App```
 2. ```cd Einkaufsliste_App```
 3. ```npm install```
 4. Emulator starten
 5. ```react-native run-android```
-## Installation auf Android Handy
+### Ausführung auf Android Handy
 1. Das Handy muss sich im [developer mode](https://www.greenbot.com/article/2457986/android/how-to-enable-developer-options-on-your-android-phone-or-tablet.html) befinden
 2. Handy mit dem Computer via USB verbinden
 3. ```react-native run-android```
-## Probleme mit iOS
-Die Implementation mittels iOS wurde nicht umgesetzt. Es gab Probleme bei der Ausführung mit ```react-native run-ios```. Die Applikation konnte nicht gebuildet werden.
+### Probleme mit iOS
+Die Implementation auf iOS-Smartphones konnte nicht umgesetzt werden. Es gab Probleme bei der Ausführung mit ```react-native run-ios```. Die Applikation konnte nicht gebuildet werden.
