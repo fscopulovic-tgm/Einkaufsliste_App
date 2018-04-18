@@ -37,7 +37,7 @@ render() {
     );
 }
 ```
-## Veränderung von Datensätzen
+### Veränderung von Datensätzen
 Das Verändern von Datensätzen ist in der ShopItem-Klasse durchgeführt worden.
 ```JavaScript
 __toggleItem() {
@@ -49,7 +49,7 @@ __toggleItem() {
     });
 }
 ```
-## Löschen von Datensätzen
+### Löschen von Datensätzen
 Das Löschen von Datensätzen ist auch in der ShopItem-Klasse durchgeführt worden.
 ```JavaScript
 __delItem() {
@@ -58,7 +58,7 @@ __delItem() {
     this.props.doc.ref.delete();
 }
 ```
-## Zuweisung von Veränderung und Löschen von Datensätzen
+### Zuweisung von Veränderung und Löschen von Datensätzen
 Eine TouchableOpacity wurde verwendet um Datensätze zu verändern beziehungsweise zu löschen. Hierbei wird beim kurzen Tippen die Veränderung durchgeführt. Bei einem langen Draufdrücken wird der Datensatz gelöscht.
 ```JavaScript
 render() {
