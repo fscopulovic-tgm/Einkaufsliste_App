@@ -26,7 +26,6 @@ export default styles = StyleSheet.create({
         flexDirection   : 'row',
     },
     itemText        : {
-        flex            : 1,
         color           : '#000000',
         fontSize        : 15,
     },
