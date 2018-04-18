@@ -3,6 +3,7 @@
 * [Umsetzung](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#umsetzung)
 * [Verbindung mit Firebase](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#verbindung-mit-firebase)
 * [Datenformat](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#datenformat)
+* [Synchronisation der Datensätze](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#synchronisation-der-datensätze)
 * [CRUD-Funktionialität](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#crud-funktionialität)
 * [Offline-Verfügbarkeit und globale Erreichbarkeit](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#offline-verfügbarkeit-und-globale-erreichbarkeit)
 * [Probleme mit dem Layout](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#probleme-mit-dem-layout)
@@ -21,6 +22,52 @@ item = {
 ```
 ```itemname``` beinhaltet den Namen des Items, welches in der Einkaufsliste angezeigt wird.
 ```bought```` beinhaltet einen Booleanwert, welcher angegibt, ob das Item schon gekauft wurde oder nicht.
+## Synchronisation der Datensätze
+Folgender Codeabschnitt beschreibt die Synchronisation der Datensätze:
+```JavaScript
+constructor() {
+    // Referenz zur Kollektion
+    this.ref = firebase.firestore().collection('items');
+    // Attribut, welche für die Synchronisation zuständig ist
+    this.unsubscribe = null;
+    ...
+}
+
+// Diese Methode wird aufgerufen, wenn der Komponent gerendet wird
+// Mit dieser Zeile wird bei dem Event Snapshot die Methode this.onCollectionUpdate ausgeführt
+componentDidMount() {
+    this.unsubscribe = this.ref.onSnapshot(this.onCollectionUpdate) 
+}
+
+// Diese Methode beendet das Listen, falls ein Snapshot passiert.
+componentWillUnmount() {
+    this.unsubscribe();
+}
+
+// Hierbei handelt es sich um eine Funktion, welche wie ein Attribut definiert wird
+// Als Parameter wird querySnapshot weitergegeben. Es beinhaltet den Snapshot.
+onCollectionUpdate = (querySnapshot) => {
+    // Neue Liste wird initialisiert
+    const newList = [];
+    // Der Snapshot wird durchiteriert und bei jedem Datensatz wird eine Funktion aufgerufen
+    // welche sich die Daten holt und in newList reingibt
+    querySnapshot.forEach((doc) => {
+        // Holt sich die Daten des Dokumentes
+        const { itemname, bought } = doc.data();
+        // Gibt alle Daten in die newList
+        newList.push({
+            key: doc.id,    // ID des Dokumentes
+            doc,            // Datenreferenz
+            itemname,       // Name des Items
+            bought,         // Gekauft-Attribut des Items
+        });
+    });
+    // Setzt den State der jetzigen Listemit der neuen
+    this.setState({ 
+        list : newList
+    });
+}
+```
 ## CRUD-Funktionialität
 ### Hinzufügen von Datensätzen
 Das Hinzufügen von Datensätzen wird in der App-Klasse durchgeführt.
