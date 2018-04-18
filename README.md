@@ -27,18 +27,18 @@ Es ist freigestellt, welche mobile Implementierungsumgebung dafür gewählt wird
 ### Bewertung
 * Gruppengrösse: 1 Person
 * Anforderungen "Grundkompetenz überwiegend erfüllt"
-** Beschreibung des Synchronisationsansatzes und Design der gewählten Architektur (Interaktion, Datenhaltung)
-** Recherche möglicher Systeme bzw. Frameworks zur Synchronisation und Replikation der Daten
-** Dokumentation der gewählten Schnittstellen
+    * Beschreibung des Synchronisationsansatzes und Design der gewählten Architektur (Interaktion, Datenhaltung)
+    * Recherche möglicher Systeme bzw. Frameworks zur Synchronisation und Replikation der Daten
+    * Dokumentation der gewählten Schnittstellen
 * Anforderungen "Grundkompetenz zur Gänze erfüllt"
-** Implementierung der gewählten Umgebung auf lokalem System
-** Überprüfung der funktionalen Anforderungen zur Erstellung und Synchronisation der Datensätze
+    * Implementierung der gewählten Umgebung auf lokalem System
+    * Überprüfung der funktionalen Anforderungen zur Erstellung und Synchronisation der Datensätze
 * Anforderungen "Erweiterte-Kompetenz überwiegend erfüllt"
-** CRUD Implementierung
-** Implementierung eines Replikationsansatzes zur Konsistenzwahrung
+    * CRUD Implementierung
+    * Implementierung eines Replikationsansatzes zur Konsistenzwahrung
 * Anforderungen "Erweiterte-Kompetenz zur Gänze erfüllt"
-** Offline-Verfügbarkeit
-** System global erreichbar
+    * Offline-Verfügbarkeit
+    * System global erreichbar
 ## Umsetzung
 Anfangs gab es die Überlegung die Applikation mit einem eigenen Server, welcher Daten von Clients in einer Mlab-Datenbank speichert, umzusetzen. Nach einer Empfehlung von Schulkollegen und einer daraus resultierenden Recherche wurde die Applikation mittels [React Native + Firebase](https://github.com/invertase/react-native-firebase) umgesetzt. Es wurde eine [Tutorial](https://blog.invertase.io/getting-started-with-cloud-firestore-on-react-native-b338fb6525b9) benutzt, welches eine ToDo Liste erstellt. Das Tutorial wurde auf die Einkaufliste umgeschrieben und gestylet.
 ## Verbindung mit Firebase
