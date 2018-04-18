@@ -1,4 +1,11 @@
 # Einkaufslisten Applikation
+## Inhalt
+* [Umsetzung](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#umsetzung)
+* [Verbindung mit Firebase](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#verbindung-mit-firebase)
+* [CRUD-Funktionialität](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#crud-funktionialität)
+* [Offline-Verfügbarkeit und globale Erreichbarkeit](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#offline-verfügbarkeit-und-globale-erreichbarkeit)
+* [Probleme mit dem Layout](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#probleme-mit-dem-layout)
+* [Installation und Ausführung](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#installation-und-ausführung)
 ## Umsetzung
 Die Applikation wurde mittels [React Native + Firebase](https://github.com/invertase/react-native-firebase) umgesetzt. Es wurde eine [Tutorial](https://blog.invertase.io/getting-started-with-cloud-firestore-on-react-native-b338fb6525b9) benutzt, welches eine ToDo Liste erstellt. Das Tutorial wurde auf die Einkaufliste umgeschrieben und gestylet.
 ## Verbindung mit Firebase
@@ -78,18 +85,18 @@ Firebase bietet eine Offline-Verfügbarkeit. Die Daten werden lokal gespeichert 
 Firebase bietet zudem auch eine globale Erreichbarkeit.
 ## Probleme mit dem Layout
 Das Layout der Items in der Liste konnte nicht wie gewollt gestaltet werden, weshalb die Items in der Liste nicht gut aussehen. Dies wirkt sich jedoch nicht auf die Funktionalität der Applikation auf.
-## Voraussetzung für die Installation
+## Installation und Ausführung
+### Voraussetzung für die Installation und Ausführung
 * [React Native](https://facebook.github.io/react-native/)
 * [Node Package Manager](https://www.npmjs.com)
 * [Android Studio](https://developer.android.com/studio/index.html) für einen Emulator
-## Installation und Ausführung
-### Allgemeine Ausführung des Projektes
+### Ausführung
 1. ``` git clone https://github.com/fscopulovic-tgm/Einkaufsliste_App```
 2. ```cd Einkaufsliste_App```
 3. ```npm install```
 4. Emulator starten
 5. ```react-native run-android```
-### Ausführung auf Android Handy
+### Ausführung auf einem Android Handy
 1. Das Handy muss sich im [developer mode](https://www.greenbot.com/article/2457986/android/how-to-enable-developer-options-on-your-android-phone-or-tablet.html) befinden
 2. Handy mit dem Computer via USB verbinden
 3. ```react-native run-android```
