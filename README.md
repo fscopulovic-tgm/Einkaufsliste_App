@@ -2,10 +2,7 @@
 ## Umsetzung
 Die Applikation wurde mittels [React Native + Firebase](https://github.com/invertase/react-native-firebase) umgesetzt. Es wurde eine [Tutorial](https://blog.invertase.io/getting-started-with-cloud-firestore-on-react-native-b338fb6525b9) benutzt, welches eine ToDo Liste erstellt. Das Tutorial wurde auf die Einkaufliste umgeschrieben und gestylet.
 ## Verbindung mit Firebase
-```react-native-firebase``` bietet dem Entwickler ein [vorgegebenes Projekt mit einer Installationsanleitung](https://github.com/invertase/react-native-firebase-starter), worin nur folgendende drei Schritte selbst gemacht werden müssen:
-1. [Firebase-Console aufrufen und neues Projekt anlegen](https://console.firebase.google.com)
-2. Android App hinzufügen
-3. Schritte beim Hinzufügen einer Android-App befolgen
+```react-native-firebase``` bietet dem Entwickler ein [vorgegebenes Projekt mit einer Installationsanleitung](https://github.com/invertase/react-native-firebase-starter). Hierbei werden alle Schritte zum Aufsetzen der Applikation beschrieben.
 ## CRUD-Funktionialität
 ### Hinzufügen von Datensätzen
 Das Hinzufügen von Datensätzen wird in der App-Klasse durchgeführt.
@@ -76,7 +73,9 @@ render() {
     );
 }
 ```
-## Voraussetzung
+## Probleme mit dem Layout
+Das Layout der Items in der Liste konnte nicht wie gewollt gestaltet werden, weshalb die Items in der Liste nicht gut aussehen. Dies wirkt sich jedoch nicht auf die Funktionalität der Applikation auf.
+## Voraussetzung für die Installation
 * [React Native](https://facebook.github.io/react-native/)
 * [Node Package Manager](https://www.npmjs.com)
 * [Android Studio](https://developer.android.com/studio/index.html) für einen Emulator
