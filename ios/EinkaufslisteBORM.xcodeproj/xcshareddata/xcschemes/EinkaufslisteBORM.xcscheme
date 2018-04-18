@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "Einkaufsliste_App.app"
-               BlueprintName = "Einkaufsliste_App"
-               ReferencedContainer = "container:Einkaufsliste_App.xcodeproj">
+               BuildableName = "EinkaufslisteBORM.app"
+               BlueprintName = "EinkaufslisteBORM"
+               ReferencedContainer = "container:EinkaufslisteBORM.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "Einkaufsliste_AppTests.xctest"
-               BlueprintName = "Einkaufsliste_AppTests"
-               ReferencedContainer = "container:Einkaufsliste_App.xcodeproj">
+               BuildableName = "EinkaufslisteBORMTests.xctest"
+               BlueprintName = "EinkaufslisteBORMTests"
+               ReferencedContainer = "container:EinkaufslisteBORM.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "Einkaufsliste_AppTests.xctest"
-               BlueprintName = "Einkaufsliste_AppTests"
-               ReferencedContainer = "container:Einkaufsliste_App.xcodeproj">
+               BuildableName = "EinkaufslisteBORMTests.xctest"
+               BlueprintName = "EinkaufslisteBORMTests"
+               ReferencedContainer = "container:EinkaufslisteBORM.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Einkaufsliste_App.app"
-            BlueprintName = "Einkaufsliste_App"
-            ReferencedContainer = "container:Einkaufsliste_App.xcodeproj">
+            BuildableName = "EinkaufslisteBORM.app"
+            BlueprintName = "EinkaufslisteBORM"
+            ReferencedContainer = "container:EinkaufslisteBORM.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Einkaufsliste_App.app"
-            BlueprintName = "Einkaufsliste_App"
-            ReferencedContainer = "container:Einkaufsliste_App.xcodeproj">
+            BuildableName = "EinkaufslisteBORM.app"
+            BlueprintName = "EinkaufslisteBORM"
+            ReferencedContainer = "container:EinkaufslisteBORM.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Einkaufsliste_App.app"
-            BlueprintName = "Einkaufsliste_App"
-            ReferencedContainer = "container:Einkaufsliste_App.xcodeproj">
+            BuildableName = "EinkaufslisteBORM.app"
+            BlueprintName = "EinkaufslisteBORM"
+            ReferencedContainer = "container:EinkaufslisteBORM.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

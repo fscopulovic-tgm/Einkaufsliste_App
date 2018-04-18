@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "Einkaufsliste_App-tvOS.app"
-               BlueprintName = "Einkaufsliste_App-tvOS"
-               ReferencedContainer = "container:Einkaufsliste_App.xcodeproj">
+               BuildableName = "EinkaufslisteBORM-tvOS.app"
+               BlueprintName = "EinkaufslisteBORM-tvOS"
+               ReferencedContainer = "container:EinkaufslisteBORM.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "Einkaufsliste_App-tvOSTests.xctest"
-               BlueprintName = "Einkaufsliste_App-tvOSTests"
-               ReferencedContainer = "container:Einkaufsliste_App.xcodeproj">
+               BuildableName = "EinkaufslisteBORM-tvOSTests.xctest"
+               BlueprintName = "EinkaufslisteBORM-tvOSTests"
+               ReferencedContainer = "container:EinkaufslisteBORM.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "Einkaufsliste_App-tvOSTests.xctest"
-               BlueprintName = "Einkaufsliste_App-tvOSTests"
-               ReferencedContainer = "container:Einkaufsliste_App.xcodeproj">
+               BuildableName = "EinkaufslisteBORM-tvOSTests.xctest"
+               BlueprintName = "EinkaufslisteBORM-tvOSTests"
+               ReferencedContainer = "container:EinkaufslisteBORM.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "Einkaufsliste_App-tvOS.app"
-            BlueprintName = "Einkaufsliste_App-tvOS"
-            ReferencedContainer = "container:Einkaufsliste_App.xcodeproj">
+            BuildableName = "EinkaufslisteBORM-tvOS.app"
+            BlueprintName = "EinkaufslisteBORM-tvOS"
+            ReferencedContainer = "container:EinkaufslisteBORM.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "Einkaufsliste_App-tvOS.app"
-            BlueprintName = "Einkaufsliste_App-tvOS"
-            ReferencedContainer = "container:Einkaufsliste_App.xcodeproj">
+            BuildableName = "EinkaufslisteBORM-tvOS.app"
+            BlueprintName = "EinkaufslisteBORM-tvOS"
+            ReferencedContainer = "container:EinkaufslisteBORM.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "Einkaufsliste_App-tvOS.app"
-            BlueprintName = "Einkaufsliste_App-tvOS"
-            ReferencedContainer = "container:Einkaufsliste_App.xcodeproj">
+            BuildableName = "EinkaufslisteBORM-tvOS.app"
+            BlueprintName = "EinkaufslisteBORM-tvOS"
+            ReferencedContainer = "container:EinkaufslisteBORM.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

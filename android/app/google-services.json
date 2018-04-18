@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "151178763719",
+    "firebase_url": "https://einkaufsliste-9af6f.firebaseio.com",
+    "project_id": "einkaufsliste-9af6f",
+    "storage_bucket": "einkaufsliste-9af6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151178763719:android:2200deb300c1567f",
+        "android_client_info": {
+          "package_name": "com.syt.einkaufslisteborm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "151178763719-k4f4a051dhim7sg9caobp42dlv1pjcl7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDphufWQc92Ai4iDDXVRfisUVBT2_HRHM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

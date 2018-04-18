@@ -1,4 +1,4 @@
-package com.einkaufsliste_app;
+package com.syt.einkaufslisteborm;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "Einkaufsliste_App";
+        return "EinkaufslisteBORM";
     }
 }

@@ -1,58 +1,92 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+import React from 'react';
+import firebase from 'react-native-firebase';
+import styles from './Styles/Styles.js';
 
-import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
+import { 
+  View, 
+  Text, 
+  TextInput, 
+  Button,
+  FlatList,
 } from 'react-native';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+import ShopItem from './ShopItem.js';
 
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends React.Component {
+  constructor() {
+    super();
+    this.ref = firebase.firestore().collection('items');
+    this.unsubscribe = null;
+    this.state = {
+      textInput : '',
+      list : [],
+    };
+  }
+
+  componentDidMount() {
+    this.unsubscribe = this.ref.onSnapshot(this.onCollectionUpdate) 
+  }
+
+  componentWillUnmount() {
+      this.unsubscribe();
+  }
+
+  onCollectionUpdate = (querySnapshot) => {
+    const newList = [];
+    querySnapshot.forEach((doc) => {
+      const { itemname, bought } = doc.data();
+      newList.push({
+        key: doc.id,
+        doc, 
+        itemname,
+        bought,
+      });
+    });
+    this.setState({ 
+      list : newList
+   });
+  }
+
+  addItem() {    
+    console.log(this.ref);
+    
+    this.ref.add({
+      itemname: this.state.textInput,
+      bought: false,
+    });
+
+    this.setState({
+      textInput: "",
+    });
+  }
+
+  renderSeparator() {
+    return (
+      <View style={styles.separatorStyle}/>
+    );
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
+        <FlatList
+          data={this.state.list}
+          renderItem={({ item }) => <ShopItem {...item} />}
+          ItemSeparatorComponent={this.renderSeparator}
+        />
+        <TextInput
+          style={styles.textInput}
+          value={this.state.textInput}
+          placeholder="Write your new shopping item"
+          onChangeText={(text) => this.setState({textInput : text})}
+        />
+        <Button
+          style={styles.button}
+          title={'Add shop item'}
+          disabled={!this.state.textInput.length}
+          onPress={() => this.addItem()}
+        />
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
