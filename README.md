@@ -1,5 +1,6 @@
 # Einkaufslisten Applikation
 ## Inhalt
+* [Aufgabenstellung](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#aufgabenstellung)
 * [Umsetzung](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#umsetzung)
 * [Verbindung mit Firebase](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#verbindung-mit-firebase)
 * [Datenformat](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#datenformat)
@@ -8,6 +9,36 @@
 * [Offline-Verfügbarkeit und globale Erreichbarkeit](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#offline-verfügbarkeit-und-globale-erreichbarkeit)
 * [Probleme mit dem Layout](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#probleme-mit-dem-layout)
 * [Installation und Ausführung](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#installation-und-ausführung)
+## Aufgabenstellung
+### Einführung
+Diese Übung soll die möglichen Synchronisationsmechanismen bei mobilen Applikationen aufzeigen.
+
+### Ziele
+Das Ziel dieser Übung ist eine Anbindung einer mobilen Applikation an ein Webservices zur gleichzeitigen Bearbeitung von bereitgestellten Informationen.
+### Voraussetzungen
+* Grundlagen einer höheren Programmiersprache
+* Grundlagen über Synchronisation und Replikation
+* Grundlegendes Verständnis über Entwicklungs- und Simulationsumgebungen
+* Verständnis von Webservices
+### Aufgabenstellung
+Es ist eine mobile Anwendung zu implementieren, die einen Informationsabgleich von verschiedenen Clients ermöglicht. Dabei ist ein synchronisierter Zugriff zu realisieren. Als Beispielimplementierung soll eine "Einkaufsliste" gewählt werden. Dabei soll sichergestellt werden, dass die Information auch im Offline-Modus abgerufen werden kann, zum Beispiel durch eine lokale Client-Datenbank.
+
+Es ist freigestellt, welche mobile Implementierungsumgebung dafür gewählt wird. Wichtig ist dabei die Dokumentation der Vorgehensweise und des Designs. Es empfiehlt sich, die im Unterricht vorgestellten Methoden sowie Argumente (pros/cons) für das Design zu dokumentieren.
+### Bewertung
+* Gruppengrösse: 1 Person
+* Anforderungen "Grundkompetenz überwiegend erfüllt"
+** Beschreibung des Synchronisationsansatzes und Design der gewählten Architektur (Interaktion, Datenhaltung)
+** Recherche möglicher Systeme bzw. Frameworks zur Synchronisation und Replikation der Daten
+** Dokumentation der gewählten Schnittstellen
+* Anforderungen "Grundkompetenz zur Gänze erfüllt"
+** Implementierung der gewählten Umgebung auf lokalem System
+** Überprüfung der funktionalen Anforderungen zur Erstellung und Synchronisation der Datensätze
+* Anforderungen "Erweiterte-Kompetenz überwiegend erfüllt"
+** CRUD Implementierung
+** Implementierung eines Replikationsansatzes zur Konsistenzwahrung
+* Anforderungen "Erweiterte-Kompetenz zur Gänze erfüllt"
+** Offline-Verfügbarkeit
+** System global erreichbar
 ## Umsetzung
 Anfangs gab es die Überlegung die Applikation mit einem eigenen Server, welcher Daten von Clients in einer Mlab-Datenbank speichert, umzusetzen. Nach einer Empfehlung von Schulkollegen und einer daraus resultierenden Recherche wurde die Applikation mittels [React Native + Firebase](https://github.com/invertase/react-native-firebase) umgesetzt. Es wurde eine [Tutorial](https://blog.invertase.io/getting-started-with-cloud-firestore-on-react-native-b338fb6525b9) benutzt, welches eine ToDo Liste erstellt. Das Tutorial wurde auf die Einkaufliste umgeschrieben und gestylet.
 ## Verbindung mit Firebase
