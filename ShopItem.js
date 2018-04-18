@@ -24,14 +24,18 @@ export default class ShopItem extends React.PureComponent {
           <TouchableOpacity
             onPress={() => this.__toggleItem()}
             onLongPress={() => this.__delItem()}
-            style={{ flex: 1, height: 48, flexDirection: 'row', alignItems: 'center' } && styling}
+            style={styles.listItem && styling}
           >
-            <Text style={styles.itemText}>
-                {this.props.itemname}
-            </Text>
-            <Text style={styles.itemText}>
-                {this.props.bought ? "Bought!" : ""}
-            </Text>
+            <View style={{flex : 8}}>
+                <Text style={styles.itemText}>
+                    {this.props.itemname}
+                </Text>
+            </View>
+            <View style={{flex : 2}}>
+                <Text style={styles.itemText}>
+                    {this.props.bought ? "Bought!" : ""}
+                </Text>
+            </View>
           </TouchableOpacity>
         );
     }

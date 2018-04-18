@@ -13,21 +13,15 @@ export default styles = StyleSheet.create({
         backgroundColor : '#FFFFFF',
     },
     listItem        : {
-        width           : deviceWidth,
-        height          : 40,
-        justifyContent  : 'center',
+        flex            : 1, 
+        height          : 48, 
+        flexDirection   : 'row', 
         alignItems      : 'center',
-    },
-    shopListItem    : {
-        width           : deviceWidth,
-        height          : 40,
-        justifyContent  : 'space-evenly',
-        alignItems      : 'center',
-        flexDirection   : 'row',
     },
     itemText        : {
+        flex            : 1,
         color           : '#000000',
-        fontSize        : 15,
+        fontSize        : 20,
     },
     separatorStyle  : {
         width           : deviceWidth,
@@ -35,9 +29,6 @@ export default styles = StyleSheet.create({
         backgroundColor : '#CED0CE',
     },
     textInput       : {
-        width           : deviceWidth,
-    },
-    button          : {
         width           : deviceWidth,
     },
 });
