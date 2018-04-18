@@ -14,7 +14,7 @@ Anfangs gab es die Überlegung die Applikation mit einem eigenen Server, welcher
 ## Datenformat
 Das Datenformat eines Einkaufslisten-Items schaut folgendermaßen aus:
 ```JavaScript
-data = {
+item = {
     itemname    : string,
     bought      : boolean,
 }
