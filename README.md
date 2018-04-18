@@ -2,14 +2,25 @@
 ## Inhalt
 * [Umsetzung](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#umsetzung)
 * [Verbindung mit Firebase](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#verbindung-mit-firebase)
+* [Datenformat](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#datenformat)
 * [CRUD-Funktionialität](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#crud-funktionialität)
 * [Offline-Verfügbarkeit und globale Erreichbarkeit](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#offline-verfügbarkeit-und-globale-erreichbarkeit)
 * [Probleme mit dem Layout](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#probleme-mit-dem-layout)
 * [Installation und Ausführung](https://github.com/fscopulovic-tgm/Einkaufsliste_App/blob/master/README.md#installation-und-ausführung)
 ## Umsetzung
-Die Applikation wurde mittels [React Native + Firebase](https://github.com/invertase/react-native-firebase) umgesetzt. Es wurde eine [Tutorial](https://blog.invertase.io/getting-started-with-cloud-firestore-on-react-native-b338fb6525b9) benutzt, welches eine ToDo Liste erstellt. Das Tutorial wurde auf die Einkaufliste umgeschrieben und gestylet.
+Anfangs gab es die Überlegung die Applikation mit einem eigenen Server, welcher Daten von Clients in einer Mlab-Datenbank speichert, umzusetzen. Nach einer Empfehlung von Schulkollegen und einer daraus resultierenden Recherche wurde die Applikation mittels [React Native + Firebase](https://github.com/invertase/react-native-firebase) umgesetzt. Es wurde eine [Tutorial](https://blog.invertase.io/getting-started-with-cloud-firestore-on-react-native-b338fb6525b9) benutzt, welches eine ToDo Liste erstellt. Das Tutorial wurde auf die Einkaufliste umgeschrieben und gestylet.
 ## Verbindung mit Firebase
 ```react-native-firebase``` bietet dem Entwickler ein [vorgegebenes Projekt mit einer Installationsanleitung](https://github.com/invertase/react-native-firebase-starter). Hierbei werden alle Schritte zum Aufsetzen der Applikation beschrieben.
+## Datenformat
+Das Datenformat eines Einkaufslisten-Items schaut folgendermaßen aus:
+```JavaScript
+data = {
+    itemname    : string,
+    bought      : boolean,
+}
+```
+```itemname``` beinhaltet den Namen des Items, welches in der Einkaufsliste angezeigt wird.
+```bought```` beinhaltet einen Booleanwert, welcher angegibt, ob das Item schon gekauft wurde oder nicht.
 ## CRUD-Funktionialität
 ### Hinzufügen von Datensätzen
 Das Hinzufügen von Datensätzen wird in der App-Klasse durchgeführt.
