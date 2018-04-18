@@ -21,6 +21,19 @@ addItem() {
       textInput: "",
     });
   }
+  
+render() {
+    // Hier wird bei einem Klick (onPress) die addItem()-Methode aufgerufen
+    return (
+        ...
+        <Button
+          style={styles.button}
+          title={'Add shop item'}
+          disabled={!this.state.textInput.length}
+          onPress={() => this.addItem()}
+        />
+    );
+}
 ```
 ## Veränderung von Datensätzen
 Das Verändern von Datensätzen ist in der ShopItem-Klasse durchgeführt worden.
@@ -41,6 +54,21 @@ __delItem() {
     // Es wird wieder mit dem doc-Property auf das ref zugegriffen
     // Dann wird nur die delete()-Methode aufgerufen
     this.props.doc.ref.delete();
+}
+```
+## Zuweisung von Veränderung und Löschen von Datensätzen
+Eine TouchableOpacity wurde verwendet um Datensätze zu verändern beziehungsweise zu löschen. Hierbei wird beim kurzen Tippen die Veränderung durchgeführt. Bei einem langen Draufdrücken wird der Datensatz gelöscht.
+```JavaScript
+render() {
+    ...
+    return (
+        <TouchableOpacity
+            onPress={() => this.__toggleItem()}
+            onLongPress={() => this.__delItem()}
+            style={styles.listItem && styling}
+          >
+          ...
+    );
 }
 ```
 ## Voraussetzung
